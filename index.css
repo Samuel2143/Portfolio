@@ -1,0 +1,18 @@
+body::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+h1,h2,h5{
+  font-family: serif;
+}
+p,.btn{
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.img{
+  width: 400px;
+  height: 250px;
+}
+.list,.link-light{
+  margin-bottom: 10px;
+}
