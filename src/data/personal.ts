@@ -54,10 +54,10 @@ export const personal = {
   ],
   social: {
     github: 'https://github.com/Samuel2143',
-    linkedin: 'https://www.linkedin.com/in/samuel-i-a30978239/',
+    linkedin: 'https://www.linkedin.com/in/samuel2143/',
     x: 'https://twitter.com/samuel2143ip',
     leetcode: 'https://leetcode.com/u/samuel2143ip/',
-    email: '',
+    email: 'samuel2143ip@gmail.com',
   },
   resumePath: '/resume.pdf',
   education: {

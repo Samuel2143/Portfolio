@@ -117,7 +117,7 @@ export function ContactSection() {
           </a>
 
           <a
-            href="mailto:samuel@example.com"
+            href={`mailto:${personal.social.email}`}
             className="group flex flex-col items-center gap-2.5 text-text-muted hover:text-accent transition-colors"
             aria-label="Email"
           >
