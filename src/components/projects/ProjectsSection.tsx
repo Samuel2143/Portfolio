@@ -213,20 +213,7 @@ function ProjectModal({
             </div>
           )}
 
-          {/* Contributions */}
-          <div>
-            <span className="text-[10px] font-mono text-text-muted tracking-widest uppercase block mb-3">
-              Samuel's Contribution
-            </span>
-            <ul className="space-y-2">
-              {project.contributions.map((c, i) => (
-                <li key={i} className="text-text-secondary text-sm flex gap-2">
-                  <span className="text-accent mt-0.5 flex-shrink-0">›</span>
-                  <span>{c}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+
         </div>
       </motion.div>
     </motion.div>

@@ -14,7 +14,6 @@ export interface Project {
   technologies: string[];
   architectureNodes: ArchitectureNode[];
   architectureFlow: string[];
-  contributions: string[];
   details?: string[];
   featured?: boolean;
 }
@@ -110,14 +109,12 @@ export const projects: Project[] = [
       'recommendation',
       'dashboard',
     ],
-    contributions: [
-      'Built the data preprocessing layer using Python and FastAPI, querying time-series data and transforming raw device readings into meaningful operational summaries for downstream defect detection.',
-      'Developed dashboard APIs to expose defect insights and related information to the application layer.',
-    ],
     details: [
+      'Data preprocessing layer built using Python and FastAPI, querying time-series data and transforming raw device readings into operational summaries.',
+      'Dashboard APIs developed to expose defect insights and operational metrics to the application layer.',
       'Detectable defects include Coil Icing, Fouling, and Heater Failure.',
-      'Detection is primarily mathematical and rule-based — the LLM interprets structured detection results to generate explanations and recommendations.',
-      'The preprocessor derives metrics such as defrost baseline and actual defrost behavior. The detection layer evaluates those metrics against domain conditions to determine whether behavior indicates a defect.',
+      'Defect detection is primarily mathematical and rule-based — the LLM interprets structured detection results to generate explanations and recommendations.',
+      'The preprocessor derives metrics such as defrost baseline and actual defrost behavior to evaluate operational conditions.',
     ],
   },
   {
@@ -161,17 +158,11 @@ export const projects: Project[] = [
       },
     ],
     architectureFlow: ['device', 'kafka-ws', 'netty', 'websocket', 'dashboard-ws'],
-    contributions: [
-      'Built a custom Netty-based WebSocket server for real-time IoT event streaming.',
-      'Implemented event filtering, message schema design, reconnection handling and retry mechanisms.',
-      'Achieved sub-500ms dashboard update latency.',
-    ],
     details: [
-      'Netty-based WebSocket server handling concurrent connections.',
-      'Kafka integration for reliable event ingestion.',
-      'Event filtering and message schema design.',
-      'Reconnection handling and retry mechanisms.',
-      'Sub-500ms dashboard update latency.',
+      'Netty-based WebSocket server handling high-concurrency real-time IoT event streaming.',
+      'Kafka integration for low-latency event ingestion and distribution layer.',
+      'Event filtering, message schema design, reconnection handling, and exponential backoff retry mechanisms.',
+      'Achieved sub-500ms end-to-end dashboard update latency.',
     ],
   },
   {
@@ -228,17 +219,11 @@ export const projects: Project[] = [
       'jwt',
       'access',
     ],
-    contributions: [
-      'Designed and implemented a custom certificate format for client identification.',
-      'Implemented Ed25519 cryptographic signature verification.',
-      'Built JWT issuance pipeline with Redis-based rate limiting.',
-    ],
     details: [
-      'Custom certificate format for client identity.',
-      'Ed25519 cryptographic signatures.',
-      'Signature verification pipeline.',
-      'JWT credential issuance.',
-      'Redis-based rate limiting.',
+      'Custom certificate format designed for client identification and device verification.',
+      'Ed25519 cryptographic signature verification pipeline.',
+      'JWT credential issuance service upon successful verification.',
+      'Redis-based rate limiting for security and abuse prevention.',
     ],
   },
 ];
